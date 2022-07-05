@@ -49,6 +49,13 @@ namespace Lamba_Problems
                 Console.WriteLine("Yes,Name exist in your list");
             }
 
+            //UC6
+            Console.WriteLine("\n______________________________________");
+            Console.WriteLine("\nSkkiping every persons whose aged is less than 60 years");
+            foreach (Person person in listpersonincity.FindAll(e => e.Age < 60))
+            {
+                Console.WriteLine("Name:" + person.Name + "\t\tAge:" + person.Age);
+            }
         }
     }
 }
