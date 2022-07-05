@@ -56,6 +56,15 @@ namespace Lamba_Problems
             {
                 Console.WriteLine("Name:" + person.Name + "\t\tAge:" + person.Age);
             }
+
+            //UC7
+            Console.WriteLine("\n______________________________________");
+            Console.WriteLine("\nremoving the person from the list");
+            listpersonincity.RemoveAll(e => (e.Name == "anjan"));
+            if (listpersonincity.TrueForAll(e => e.Name != "anjan"))
+            {
+                Console.WriteLine("no person with that name ");
+            }
         }
     }
 }
