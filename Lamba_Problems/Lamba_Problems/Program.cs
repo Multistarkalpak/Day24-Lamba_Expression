@@ -6,7 +6,7 @@ namespace Lamba_Problems
     internal class Program
     {
         public static void Main(String[] args)
-        {    //UC1
+        {   //UC1
             List<Person> listpersonincity = new List<Person>();
             listpersonincity.Add(new Person("4745424", "John", "12 main streat Newyork YK", 15));
             listpersonincity.Add(new Person("35444442", "Aamir", "14 main streat UK YK", 50));
@@ -31,6 +31,16 @@ namespace Lamba_Problems
             {
                 Console.WriteLine("Name:" + person.Name + "\t\tAge:" + person.Age);
             }
+
+            
+            //UC4
+            Console.WriteLine("\n______________________________________");
+            Console.WriteLine("Getting Average Of All The Person's Age: ");
+            double averageAge = listpersonincity.Average(e => e.Age);
+            {
+                Console.WriteLine("The Average Of All The Person's Age Is: {0}", averageAge);
+            }
+            
         }
     }
 }
