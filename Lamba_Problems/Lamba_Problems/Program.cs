@@ -40,7 +40,15 @@ namespace Lamba_Problems
             {
                 Console.WriteLine("The Average Of All The Person's Age Is: {0}", averageAge);
             }
-            
+
+            //UC5
+            Console.WriteLine("\n______________________________________");
+            Console.WriteLine("checking wheather perosn name present in the list");
+            foreach (Person person in listpersonincity.FindAll(e => e.Name == "anjan"))
+            {
+                Console.WriteLine("Yes,Name exist in your list");
+            }
+
         }
     }
 }
